@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css.folder/graphpage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        window.onload = function () {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            theme: "light2",
+           
+            data: [{        
+                type: "line",
+                  indexLabelFontSize: 16,
+                dataPoints: [
+                    { y: 450 },
+                    { y: 414},
+                    { y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+                    { y: 460 },
+                    { y: 450 },
+                    { y: 500 },
+                    { y: 480 },
+                    { y: 480 },
+                    { y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+                    { y: 500 },
+                    { y: 480 },
+                    { y: 510 }
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
+    
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+      
+            <div>
+        
+
+<!-- /*******************************logo and toogler***************************/ -->
+
+
+
+                
+                <!-- <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+    
+                    </button> -->
+                </div>
+                <div class="navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Introduction </a> </li>
+                        <li><a href="">Trading Calender </a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">FAQ's </a></li>
+                        
+                    </ul>
+
+                </div>
+                <a href=""><img class="notification_icon" src="images/notification_icon.png"></a>                       
+                <a  data-toggle="collapse"  data-target="#popdown"><img class="profile_icon" src="images/1.jpg" alt=""></a>
+                </div>
+                </nav>
+</header>
+<div class="section">
+
+    <div class="popdown-nav_item" id="popdown">
+        <ul>
+            <li><a href="">Introduction</a></li>
+            <li><a href="">Trading Calender</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">FAQ's</a></li>
+    
+    
+        </ul>
+    </div>
+    
+    <div class="sidebar_toggler">
+        <!-- <span class="glyphicon glyphicon-arrow-left"></span> -->
+       
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#side_bar">
+                <!-- <span class="icon-bar i1"></span> -->
+                <span class="icon-bar i2"></span>
+                <span class="icon-bar i3"></span>
+
+            </button>
+            <div >
+            <div class="side_bar" id="side_bar">
+                <img src="images/red_chilli_icon.png">
+                <ul>
+                    <li><a href="">Add Funds</a></li>
+                    <li><a href="">Place Buy Order</a></li>
+                    <li><a href="">Placd Sell Order</a></li>
+                    <li><a href="">Order History</a></li>
+                    <li><a href="">Request for Return of funds</a></li>
+                </ul>
+            </div>
+            <div class="middle_area">
+    <div class="little_cards">
+        
+        
+        <h5>Funds Available</h5>
+    <h4>100000</h4>
+   
+    </div>
+    <div class="little_cards">
+        
+        
+        <h5>Bags Purchased</h5>
+    <h4>200</h4>
+
+    </div>
+    <div class="little_cards">
+        <h5>Bags Sold</h5>
+        <h4>500</h4>
+    </div>
+</div>
+   <div class="graph">
+    <div id="chartContainer" style="height: 369px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   </div>    
+   
+   <div class="copyright">
+    <p >© Copyright 2019 GunturMirchi.in, Andhra Trading Company, 
+        Jamii Saragapani & Company, Jamili Group - All Rights Reserved</p>
+   </div>
+</body>
+</html>

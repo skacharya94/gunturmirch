@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.gray {
+  width: 75%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.082);
+  padding: 20px 0 0 100px;
+}
+.red {
+  width: 25%;
+  height: 100vh;
+  background: red;
+}
+.gray_red {
+  float: left;
+}
+.chill {
+  width: 60px;
+}
+.gray h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: left;
+}
+.gray h5 {
+  font-weight: bold;
+  margin: 20px 0 0 200px;
+}
+
+/* form part */
+
+.gray form {
+  width: 400px;
+  margin-top: 50px;
+}
+.gray form input {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 10px 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.gray form button {
+  background: red;
+  width: 120px;
+  padding: 7px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: white;
+  margin: 0 0 10px 0;
+}
+.switches {
+  width: 150px;
+  margin: 50px 0 20px 30%;
+}
+.copyright {
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+  left: 250px;
+  z-index: 100;
+}
+
+/* round_pc */
+
+.round_pc {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  top: 74px;
+}
+/* Responsive */
+
+@media screen and (max-width: 650px) {
+  .gray {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.082);
+    padding: 20px 10vw 0 10vw;
+  }
+  .red {
+    width: 0%;
+    height: 0vh;
+    background: red;
+    visibility: hidden;
+  }
+  .gray_red {
+    float: left;
+  }
+  .chill {
+    width: 40px;
+  }
+  .gray h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gray h5 {
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* form part responsive */
+
+  .gray form {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .gray form input {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 10px 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .gray form button {
+    background: red;
+    width: 120px;
+    padding: 7px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 0 0 10px 0;
+  }
+  .switches {
+    width: 100%;
+    margin: 50px 0 0 auto;
+    padding: 0 30% 0 30%;
+  }
+
+  .copyright {
+    position: fixed;
+    background: black;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 10px;
+    width: 100%;
+    left: 0;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+  }
+  .round_pc {
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    right: 100px;
+    top: 54px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  .red {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .gray {
+    width: 100%;
+    padding: 0 20% 0 20%;
+    text-align: center;
+  }
+  .round_pc {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  .copyright {
+    left: 0;
+    text-align: center;
+  }
+  .gray h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .gray h5 {
+    text-align: center;
+    margin-left: 0;
+    font-size: 17px;
+  }
+  .gray form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1365px) {
+  .gray {
+    width: 75%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.082);
+    padding: 20px 10% 0 4%;
+  }
+  .red {
+    width: 25%;
+    height: 100vh;
+    background: red;
+  }
+  .gray_red {
+    float: left;
+  }
+  .gray form {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 100px 0 20px;
+  }
+  .chill {
+    width: 60px;
+  }
+  .gray h1 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gray h5 {
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  .copyright {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+  .switches {
+    width: 100%;
+    margin: 50px 0 0 10%;
+    padding: 0 20% 0 24%;
+  }
+  .round_pc {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+  }
+}
